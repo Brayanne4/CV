@@ -18,14 +18,12 @@ cvs/
 
 - CV : `cv_brayanne_njiha_kuito_<poste_simplifié>_<entreprise>.tex`
 - LM : `lm_brayanne_njiha_kuito_<poste_simplifié>_<entreprise>.tex`
-- Exemples : `cv_brayanne_njiha_kuito_hardware_renault.tex`
 
 ---
 
-## 0.1 INFORMATIONS PERSONNELLES (VARIABLES CENTRALISÉES)
+## 0.1 INFORMATIONS PERSONNELLES
 
 ```latex
-% === INFORMATIONS PERSONNELLES (à copier dans chaque fichier) ===
 \newcommand{\MonNom}{NJIHA KUITO Brayanne Stella}
 \newcommand{\MonEmail}{stellanjiha1@gmail.com}
 \newcommand{\MonTelephone}{(+33) 6 52 31 08 46}
@@ -35,25 +33,23 @@ cvs/
 
 **Disponibilités :**
 
-- **Alternance** : Disponible dès **Septembre 2026**
-- **Domaines ciblés** : R&D, Assistante ingénieur, Laboratoire Électronique, Test & Validation, Hardware
+- **Alternance** : Disponible dès **Septembre 2026** (1 an)
+- **Domaines ciblés** : R&D, Assistante ingénieur, Laboratoire Electronique, Test & Validation, Hardware
 
 ---
 
 ## 1. RÈGLES D'OR
 
 1. **Source de Vérité Unique :** Utilise UNIQUEMENT les informations de la section "3. BASE DE DONNÉES". N'invente rien.
-2. **Sélection Intelligente :** Pour un CV d'une page :
-   - Sélectionne les 3 ou 4 expériences/projets les plus pertinents pour l'offre.
-   - Ne tente pas de tout mettre. Cible (ex: Si offre Hardware/PCB -> Robot, CEM, KiCad. Si offre Embarqué -> STM32, stage ENSPY, Robot).
+2. **Sélection Intelligente :** Pour un CV d'une page, sélectionne les 3 ou 4 expériences les plus pertinentes pour l'offre.
 3. **Format LaTeX Strict :** Utilise le template fourni en section 2. Échappe les caractères spéciaux (`&`, `%`, `_`).
 4. **Règles de rédaction (OBLIGATOIRES) :**
-   - JAMAIS de tirets longs (—, –, ---) dans les textes.
+   - JAMAIS de tirets longs dans les textes.
    - JAMAIS de formulations "exactement ce que vous recherchez", "correspond précisément"
-   - JAMAIS commencer par "Actuellement en..." ou "Étudiante en..." (trop générique)
+   - JAMAIS commencer par "Actuellement en..." ou "Etudiante en..." (trop générique)
    - Commencer par une accroche technique liée à l'offre
    - Utiliser "Je suis disponible dès..." avec pronom, pas "Disponible dès..."
-5. **Ton :** Ingénieure, précise, orientée résultats (Action -> Résultat). Pas d'adjectifs inutiles ("passionnée", "dynamique").
+5. **Ton :** Ingénieure, précise, orientée résultats (Action -> Résultat). Pas d'adjectifs inutiles.
 6. **Couleurs Personnalisées :** Adapter `\definecolor{primary}` selon l'entreprise.
 
 ---
@@ -74,24 +70,19 @@ cvs/
 \usepackage{lmodern}
 \usepackage[normalem]{ulem}
 
-% --- Couleurs ---
 \definecolor{primary}{RGB}{35, 55, 123}
 \definecolor{secondary}{RGB}{80, 80, 80}
 
-% --- Config Liens ---
 \hypersetup{colorlinks=true, linkcolor=primary, filecolor=primary, urlcolor=primary}
-
-% --- Titres ---
 \titleformat{\section}{\large\bfseries\color{primary}\uppercase}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{8pt}{5pt}
 
 \begin{document}
 
-% --- EN-TÊTE ---
 \begin{center}
     {\Large \textbf{NJIHA KUITO Brayanne Stella}} \\ \vspace{4pt}
     \textbf{\large [TITRE DU POSTE VISÉ]} \\
-    \textit{\small Disponible dès septembre 2026 -- Alternance} \\ \vspace{4pt}
+    \textit{\small Disponible dès septembre 2026 -- Alternance 1 an} \\ \vspace{4pt}
     \small
     \faMapMarker\ Cergy (95), France \quad
     \faPhone\ (+33) 6 52 31 08 46 \quad
@@ -101,28 +92,24 @@ cvs/
 
 \vspace{-6pt}
 
-% --- PROFIL ---
 \noindent\small{[PHRASE D'ACCROCHE PERCUTANTE ET CIBLÉE SELON L'OFFRE]}
 
-% --- FORMATION ---
 \section{Formation}
 \begin{itemize}[leftmargin=*, label=\tiny$\bullet$, nosep]
     \item \textbf{CY Paris Université} \hfill \textit{2026 -- 2027} \\
-    \small{Master 2 EEA -- Électronique, Énergie Électrique, Automatique.}
-    \item \textbf{ENSEA -- École Nationale Supérieure de l'Électronique et de ses Applications} \hfill \textit{2025 -- 2026} \\
-    \small{Master 1 Électronique (échange) -- Électronique de puissance, Conversion d'énergie, CEM, Véhicules électriques.}
-    \item \textbf{École Nationale Supérieure Polytechnique de Yaoundé (ENSPY)} \hfill \textit{2022 -- 2023} \\
-    \small{Licence Génie Électrique -- Électrotechnique, Énergies renouvelables, Électronique analogique et numérique, Automatique.}
+    \small{Master 2 EEA -- Electronique, Energie Electrique, Automatique.}
+    \item \textbf{ENSEA -- Ecole Nationale Supérieure de l'Electronique et de ses Applications} \hfill \textit{2025 -- 2026} \\
+    \small{Master 1 Electronique (échange) -- Electronique de puissance, Conversion d'énergie, CEM, Véhicules électriques.}
+    \item \textbf{Ecole Nationale Supérieure Polytechnique de Yaoundé (ENSPY)} \hfill \textit{2022 -- 2023} \\
+    \small{Cursus Ingénieur Génie Electrique -- Electrotechnique, Energies renouvelables, Electronique analogique et numérique, Automatique.}
 \end{itemize}
 
-% --- COMPÉTENCES ---
 \section{Compétences Techniques}
 \begin{itemize}[leftmargin=*, nosep]
     \item \small{\textbf{[CATÉGORIE 1] :} [Compétences]}
     \item \small{\textbf{[CATÉGORIE 2] :} [Compétences]}
 \end{itemize}
 
-% --- EXPÉRIENCES / PROJETS ---
 \section{Projets / Expériences}
 \begin{itemize}[leftmargin=*, label={-}]
 
@@ -142,26 +129,26 @@ cvs/
 
 ---
 
-## 3. BASE DE DONNÉES COMPLÈTE (TOUTES LES EXPÉRIENCES)
+## 3. BASE DE DONNÉES COMPLÈTE
 
 ### A. EXPÉRIENCES PROFESSIONNELLES
 
-- **Stagiaire Systèmes Embarqués @ ENSPY** | _Juin -- Août 2025_ | _Yaoundé, Cameroun_
+- **Stagiaire Systèmes Embarqués -- ENSPY** | _Juin -- Août 2025_
   - _Domaine :_ Systèmes embarqués / Véhicule autonome
   - _Tech :_ C, Arduino, capteurs, actionneurs
   - _Réalisations :_ Développement en C sur Arduino pour véhicule autonome. Optimisation algorithmes de détection et contrôle moteur. Tests fonctionnels et validation de prototype. Documentation et traçabilité des essais.
 
-- **Stagiaire Ingénierie Énergétique @ ENEO** | _Juil. -- Août 2024_ | _Centrale d'Edéa, Cameroun_
-  - _Domaine :_ Énergie / Industrie
+- **Stagiaire Ingénierie Energétique -- ENEO** | _Juil. -- Août 2024_
+  - _Domaine :_ Energie / Industrie
   - _Tech :_ Excel, instrumentation industrielle
   - _Réalisations :_ Inspection et suivi de stabilité d'équipements de puissance (alternateurs, transformateurs, turbines). Traitement et analyse d'indicateurs de performance (puissance active, rendement) via Excel. Vérifications réglementaires de conformité technique et appui à la maintenance préventive.
 
-- **Stagiaire Ouvrier @ OMNIUM SERVICES** | _Cameroun_
-  - _Domaine :_ Électricité / Câblage
+- **Stagiaire Ouvrier -- OMNIUM SERVICES**
+  - _Domaine :_ Electricité / Câblage
   - _Tech :_ Câblage électrique, instrumentation
   - _Réalisations :_ Repérage et étiquetage de câbles. Assistance aux tests d'équipements. Participation au raccordement d'équipements électriques et de caméras.
 
-- **Logistique & Coordination @ TAWA Delivery** | _Cameroun_
+- **Logistique & Coordination -- TAWA Delivery**
   - _Domaine :_ Logistique / Gestion opérationnelle
   - _Tech :_ Excel
   - _Réalisations :_ Gestion de la logistique opérationnelle. Suivi et reporting sur Excel. Participation aux réunions de staff pour analyse des problèmes et propositions d'améliorations.
@@ -181,18 +168,18 @@ cvs/
     - Projet réalisé en binôme, supervisé par un enseignant-chercheur.
 
 - **Simulation Convertisseurs / Onduleurs** | _2025 -- 2026_ | _ENSEA_
-  - _Domaine :_ Électronique de puissance
+  - _Domaine :_ Electronique de puissance
   - _Tech :_ LTSpice, PSpice
   - _Réalisations :_
-    - Études de faisabilité, modélisation structurelle et simulation dynamique de topologies (Buck, Boost, onduleurs).
-    - Évaluation des performances énergétiques : calculs de rendement, analyse de stabilité des signaux.
+    - Etudes de faisabilité, modélisation structurelle et simulation dynamique de topologies (Buck, Boost, onduleurs).
+    - Evaluation des performances énergétiques : calculs de rendement, analyse de stabilité des signaux.
     - Estimation des pertes par commutation/conduction des semi-conducteurs (MOSFET/IGBT).
 
 - **Caractérisation CEM** | _2025 -- 2026_ | _ENSEA_
-  - _Domaine :_ Compatibilité Électromagnétique
+  - _Domaine :_ Compatibilité Electromagnétique
   - _Tech :_ Oscilloscope numérique, analyseur de signaux, GBF
   - _Réalisations :_
-    - Étude expérimentale des phénomènes de couplage sur lignes microrubans.
+    - Etude expérimentale des phénomènes de couplage sur lignes microrubans.
     - Analyse de l'impact des plans de masse sur l'immunité des signaux.
     - Validation instrumentale et mesures de contrôle via appareils de laboratoire.
 
@@ -200,17 +187,17 @@ cvs/
 
 ### C. COMPÉTENCES TECHNIQUES COMPLÈTES
 
-- **Conception & Conversion d'Énergie :** Convertisseurs DC/DC (Buck, Boost, Flyback), onduleurs, simulation LTSpice/PSpice, saisie schémas et routage PCB sous KiCad, dimensionnement de composants, optimisation de performance, réduction couplages CEM.
+- **Conception & Conversion d'Energie :** Convertisseurs DC/DC (Buck, Boost, Flyback), onduleurs, simulation LTSpice/PSpice, saisie schémas et routage PCB sous KiCad, dimensionnement de composants, réduction couplages CEM.
 - **Systèmes Embarqués & Programmation :** C/C++, VHDL, STM32, Arduino, Raspberry Pi, bus I2C/UART, ROS2.
-- **Bancs de Tests & Instrumentation :** Oscilloscope, GBF, multimètre, analyseur de signaux, conception de bancs d'essais, validation fonctionnelle de cartes, rédaction de rapports de conformité.
+- **Bancs de Tests & Instrumentation :** Oscilloscope, GBF, multimètre, analyseur de signaux, validation fonctionnelle de cartes, rédaction de rapports de conformité.
 - **Outils :** KiCad, LTSpice, PSpice, Gazebo, RViz, Excel.
 
 ---
 
 ### D. LEADERSHIP & ACTIVITÉS
 
-- **Vice-présidente** du Club Génie Électrique (ENSPY)
-- Membre du **Club Débat & Éloquence**
+- **Vice-présidente** du Club Génie Electrique (ENSPY)
+- Membre du **Club Débat & Eloquence**
 - **Centres d'intérêt :** Escalade, Mangas, Musique, Danse
 
 ---
@@ -228,15 +215,15 @@ cvs/
 
 ### Mapping Offre -> Expériences à Prioriser
 
-| Type d'offre                        | Expériences à prioriser                                         | Compétences clés                                  |
-| ----------------------------------- | --------------------------------------------------------------- | ------------------------------------------------- |
-| **Hardware / PCB / Conception**     | Robot (KiCad, soudure), CEM, Convertisseurs                     | KiCad, LTSpice, soudure, schématique              |
-| **Test & Validation**               | Robot (validation labo), CEM (mesures), Stage ENSPY             | Oscilloscope, GBF, rapports de conformité         |
-| **Électronique de Puissance**       | Convertisseurs/Onduleurs, Stage ENEO, CEM                       | LTSpice, PSpice, Buck/Boost, MOSFET/IGBT          |
-| **Systèmes Embarqués**              | Robot (STM32/RPi/ROS2), Stage ENSPY (Arduino)                   | C/C++, STM32, I2C, UART, ROS2                     |
-| **R&D / Laboratoire**               | Robot (conception complète), CEM (expérimental), Convertisseurs | Instrumentation, simulation, validation           |
-| **Énergie / Industrie**             | Stage ENEO, Convertisseurs, CEM                                 | Alternateurs, transformateurs, rendement          |
-| **Véhicules Électriques**           | Robot (embarqué), Convertisseurs, Stage ENSPY                   | STM32, conversion d'énergie, C                    |
+| Type d'offre                  | Expériences à prioriser                                         | Compétences clés                          |
+| ----------------------------- | --------------------------------------------------------------- | ----------------------------------------- |
+| **Hardware / PCB / Conception** | Robot (KiCad, soudure), CEM, Convertisseurs                   | KiCad, LTSpice, soudure, schématique      |
+| **Test & Validation**         | Robot (validation labo), CEM (mesures), Stage ENSPY             | Oscilloscope, GBF, rapports de conformité |
+| **Electronique de Puissance** | Convertisseurs/Onduleurs, Stage ENEO, CEM                       | LTSpice, PSpice, Buck/Boost, MOSFET/IGBT  |
+| **Systèmes Embarqués**        | Robot (STM32/RPi/ROS2), Stage ENSPY (Arduino)                   | C/C++, STM32, I2C, UART, ROS2             |
+| **R&D / Laboratoire**         | Robot (conception complète), CEM (expérimental), Convertisseurs | Instrumentation, simulation, validation   |
+| **Energie / Industrie**       | Stage ENEO, Convertisseurs, CEM                                 | Alternateurs, transformateurs, rendement  |
+| **Véhicules Electriques**     | Robot (embarqué), Convertisseurs, Stage ENSPY                   | STM32, conversion d'énergie, C            |
 
 ### Couleurs d'entreprise connues
 
@@ -281,7 +268,7 @@ cvs/
 \noindent
 \begin{minipage}[t]{0.5\textwidth}
     \textbf{NJIHA KUITO Brayanne Stella}\\
-    Élève Ingénieure -- Master EEA\\[3pt]
+    Elève Ingénieure -- Master EEA\\[3pt]
     \faMapMarker\ Cergy (95), France\\
     \faPhone\ (+33) 6 52 31 08 46\\
     \faEnvelope\ \href{mailto:stellanjiha1@gmail.com}{stellanjiha1@gmail.com}
@@ -304,7 +291,7 @@ cvs/
 
 \vspace{1cm}
 
-\noindent\textbf{Objet :} Candidature au poste de [TITRE DU POSTE] -- Alternance
+\noindent\textbf{Objet :} Candidature au poste de [TITRE DU POSTE] -- Alternance 1 an
 
 \vspace{0.8cm}
 
@@ -312,9 +299,9 @@ Madame, Monsieur,
 
 [PARAGRAPHE 1 : Accroche technique liée à l'offre + Formation]
 
-[PARAGRAPHE 2 : Expérience pertinente #1 -- Projet/Stage en lien avec l'offre]
+[PARAGRAPHE 2 : Expérience pertinente -- Projet/Stage en lien avec l'offre]
 
-[PARAGRAPHE 3 : Expérience pertinente #2 -- Compétences techniques démontrées]
+[PARAGRAPHE 3 : Compétences techniques démontrées]
 
 [PARAGRAPHE 4 : Conclusion -- Valeur ajoutée + Disponibilité dès septembre 2026]
 
@@ -325,7 +312,7 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distin
 \vspace{0.8cm}
 
 \textbf{NJIHA KUITO Brayanne Stella}\\
-\textit{Élève Ingénieure ENSEA / CY Paris Université}
+\textit{Elève Ingénieure ENSEA / CY Paris Université}
 
 \end{document}
 ```

@@ -1,0 +1,144 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[left=1cm,right=1cm,top=.5cm,bottom=0cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{lmodern}
+\usepackage[normalem]{ulem}
+
+% --- Couleurs Thales ---
+\definecolor{primary}{RGB}{0, 45, 114}
+\definecolor{secondary}{RGB}{80, 80, 80}
+
+% --- Config Liens ---
+\hypersetup{colorlinks=true, linkcolor=primary, filecolor=primary, urlcolor=primary}
+
+% --- Titres ---
+\titleformat{\section}{\large\bfseries\color{primary}\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{5pt}
+
+\begin{document}
+
+% --- EN-TÊTE ---
+\begin{center}
+    {\Large \textbf{NJIHA KUITO Brayanne Stella}} \\ \vspace{4pt}
+    \textbf{\large Alternance -- Ingénieure Conception Électronique Analogique \& Systèmes Embarqués} \\
+    \textit{\small Disponible dès septembre 2026 -- Alternance 3 ans} \\ \vspace{4pt}
+    \small
+    \faMapMarker\ Cergy (95), France \quad
+    \faPhone\ (+33) 6 52 31 08 46 \quad
+    \faEnvelope\ \href{mailto:stellanjiha1@gmail.com}{stellanjiha1@gmail.com} \quad
+    \faCar\ Permis B
+\end{center}
+
+\vspace{-4pt}
+
+% --- PROFIL ---
+\noindent\small{Élève ingénieure spécialisée en électronique de puissance et systèmes embarqués, avec une expérience pratique en conception PCB (KiCad), simulation de circuits (LTSpice/PSpice), caractérisation CEM et développement embarqué (STM32, C). Habituée aux bancs de mesure et à la validation fonctionnelle de cartes électroniques en laboratoire.}
+
+\vspace{4pt}
+
+% --- FORMATION ---
+\section{Formation}
+\begin{itemize}[leftmargin=*, label=\tiny$\bullet$, nosep]
+    \item \textbf{CY Paris Université} \hfill \textit{2026 -- 2027} \\
+    \small{Master 2 EEA -- Électronique, Énergie Électrique, Automatique.}
+    \item \textbf{ENSEA -- École Nationale Supérieure de l'Électronique et de ses Applications} \hfill \textit{2025 -- 2026} \\
+    \small{Master 1 Électronique (échange) -- Électronique de puissance, Conversion d'énergie, CEM, Véhicules électriques.}
+    \item \textbf{École Nationale Supérieure Polytechnique de Yaoundé (ENSPY)} \hfill \textit{2022 -- 2023} \\
+    \small{Licence Génie Électrique -- Électrotechnique, Énergies renouvelables, Électronique analogique et numérique, Automatique.}
+\end{itemize}
+
+\vspace{2pt}
+
+% --- COMPÉTENCES ---
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=*, nosep]
+    \item \small{\textbf{Conception \& Simulation électronique :} KiCad (schématique, routage PCB), LTSpice, PSpice, convertisseurs DC/DC (Buck, Boost, Flyback), onduleurs, MOSFET/IGBT.}
+    \item \small{\textbf{CEM \& Instrumentation :} Analyse couplages EM, plans de masse, oscilloscope numérique, GBF, analyseur de signaux, rédaction rapports de conformité.}
+    \item \small{\textbf{Systèmes Embarqués :} C/C++, VHDL, STM32, Arduino, Raspberry Pi, bus I2C/UART, ROS2.}
+    \item \small{\textbf{Langues :} Français (maternel), Anglais (professionnel -- documentation technique).}
+\end{itemize}
+
+\vspace{2pt}
+
+% --- PROJETS ---
+\section{Projets Académiques}
+\begin{itemize}[leftmargin=*, label={-}]
+
+\item \textbf{Caractérisation CEM -- Lignes microrubans \& Plans de masse} \hfill \textit{2025 -- 2026} \\
+\textit{ENSEA} \hfill \textit{Oscilloscope, GBF, Analyseur de signaux}
+\vspace{-2pt}
+    \begin{itemize}[leftmargin=0.4cm, nosep, label=\tiny$\bullet$]
+        \item \small{Étude expérimentale des phénomènes de couplage électromagnétique sur lignes microrubans.}
+        \item \small{Analyse quantitative de l'impact des plans de masse sur l'immunité des signaux de cartes électroniques.}
+        \item \small{Validation instrumentale et mesures de contrôle via appareils de laboratoire (oscilloscope numérique, analyseur de signaux, GBF).}
+    \end{itemize}
+\vspace{3pt}
+
+\item \textbf{Simulation Convertisseurs DC/DC \& Onduleurs} \hfill \textit{2025 -- 2026} \\
+\textit{ENSEA} \hfill \textit{LTSpice, PSpice}
+\vspace{-2pt}
+    \begin{itemize}[leftmargin=0.4cm, nosep, label=\tiny$\bullet$]
+        \item \small{Modélisation structurelle et simulation dynamique de topologies Buck, Boost et onduleurs sous LTSpice et PSpice.}
+        \item \small{Calculs de rendement, analyse de stabilité des signaux et estimation des pertes par commutation/conduction (MOSFET/IGBT).}
+    \end{itemize}
+\vspace{3pt}
+
+\item \textbf{Robot à Navigation Autonome -- Conception PCB \& Embarqué} \hfill \textit{2025 -- 2026} \\
+\textit{ENSEA} \hfill \textit{STM32, Raspberry Pi, KiCad, I2C, C, ROS2}
+\vspace{-2pt}
+    \begin{itemize}[leftmargin=0.4cm, nosep, label=\tiny$\bullet$]
+        \item \small{Conception et routage complet sous KiCad d'une carte d'alimentation (régulateur de tension) intégrée au robot.}
+        \item \small{Assemblage, soudure de précision et validation fonctionnelle en laboratoire face aux contraintes électriques de puissance.}
+        \item \small{Architecture numérique STM32/Raspberry Pi via bus I2C, programmation des lois de commande en C.}
+    \end{itemize}
+\vspace{3pt}
+
+\end{itemize}
+
+% --- EXPÉRIENCES ---
+\section{Expériences Professionnelles}
+\begin{itemize}[leftmargin=*, label={-}]
+
+\item \textbf{Stagiaire Systèmes Embarqués @ ENSPY} \hfill \textit{Juin -- Août 2025} \\
+\textit{Yaoundé, Cameroun} \hfill \textit{C, Arduino, capteurs/actionneurs}
+\vspace{-2pt}
+    \begin{itemize}[leftmargin=0.4cm, nosep, label=\tiny$\bullet$]
+        \item \small{Développement en C sur Arduino pour véhicule autonome : intégration capteurs et actionneurs, optimisation algorithmes de contrôle moteur.}
+        \item \small{Tests fonctionnels, validation de prototype et documentation des essais.}
+    \end{itemize}
+\vspace{3pt}
+
+\item \textbf{Stagiaire Ingénierie Énergétique @ ENEO} \hfill \textit{Juil. -- Août 2024} \\
+\textit{Centrale d'Edéa, Cameroun} \hfill \textit{Instrumentation industrielle, Excel}
+\vspace{-2pt}
+    \begin{itemize}[leftmargin=0.4cm, nosep, label=\tiny$\bullet$]
+        \item \small{Inspection et suivi de stabilité d'équipements de puissance (alternateurs, transformateurs, turbines).}
+        \item \small{Analyse des indicateurs de performance (puissance active, rendement) et vérifications de conformité technique.}
+    \end{itemize}
+\vspace{3pt}
+
+\item \textbf{Stagiaire Ouvrier @ OMNIUM SERVICES} \hfill \textit{Cameroun} \\
+\textit{Câblage électrique \& instrumentation}
+\vspace{-2pt}
+    \begin{itemize}[leftmargin=0.4cm, nosep, label=\tiny$\bullet$]
+        \item \small{Repérage et étiquetage de câbles, assistance aux tests d'équipements, raccordement d'équipements électriques et de caméras.}
+    \end{itemize}
+
+\end{itemize}
+
+% --- DISTINCTIONS ---
+\section{Engagements \& Atouts}
+\begin{itemize}[leftmargin=*, nosep, label=\tiny$\bullet$]
+    \item \small{\textbf{Vice-présidente} du Club Génie Électrique -- ENSPY.}
+    \item \small{\textbf{Atouts :} Rigueur, autonomie, travail en équipe multidisciplinaire.}
+    \item \small{\textbf{Centres d'intérêt :} Escalade, mangas, musique.}
+\end{itemize}
+
+\end{document}
